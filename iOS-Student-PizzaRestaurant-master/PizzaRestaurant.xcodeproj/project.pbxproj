@@ -11,6 +11,7 @@
 		6001EC84197B4EC300F97011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC83197B4EC300F97011 /* main.m */; };
 		6001EC90197B502F00F97011 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC8F197B502F00F97011 /* Kitchen.m */; };
 		9CA381C71D26F84600BF259A /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381C61D26F84600BF259A /* Pizza.m */; };
+		9CA381E61D2747E000BF259A /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381E51D2747E000BF259A /* Manager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +35,9 @@
 		6001EC8F197B502F00F97011 /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
 		9CA381C51D26F84600BF259A /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
 		9CA381C61D26F84600BF259A /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
-		9CA381C91D271FEA00BF259A /* KitchenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KitchenDelegate.h; path = ../KitchenDelegate.h; sourceTree = "<group>"; };
+		9CA381E31D27361700BF259A /* KitchenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenDelegate.h; sourceTree = "<group>"; };
+		9CA381E41D2747E000BF259A /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		9CA381E51D2747E000BF259A /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +83,11 @@
 				6001EC83197B4EC300F97011 /* main.m */,
 				9CA381C51D26F84600BF259A /* Pizza.h */,
 				9CA381C61D26F84600BF259A /* Pizza.m */,
-				9CA381C91D271FEA00BF259A /* KitchenDelegate.h */,
+				9CA381E41D2747E000BF259A /* Manager.h */,
+				9CA381E51D2747E000BF259A /* Manager.m */,
 				6001EC8E197B502F00F97011 /* Kitchen.h */,
 				6001EC8F197B502F00F97011 /* Kitchen.m */,
+				9CA381E31D27361700BF259A /* KitchenDelegate.h */,
 				6001EC85197B4EC300F97011 /* Supporting Files */,
 			);
 			path = PizzaRestaurant;
@@ -150,6 +155,7 @@
 				9CA381C71D26F84600BF259A /* Pizza.m in Sources */,
 				6001EC90197B502F00F97011 /* Kitchen.m in Sources */,
 				6001EC84197B4EC300F97011 /* main.m in Sources */,
+				9CA381E61D2747E000BF259A /* Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

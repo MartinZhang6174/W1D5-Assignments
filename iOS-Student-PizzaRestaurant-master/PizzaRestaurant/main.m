@@ -10,6 +10,8 @@
 
 #import "Kitchen.h"
 #import "Pizza.h"
+#import "KitchenDelegate.h"
+#import "Manager.h"
 
 int main(int argc, const char * argv[])
 {
@@ -19,6 +21,9 @@ int main(int argc, const char * argv[])
         NSLog(@"Please pick your pizza size and toppings:");
         
         Kitchen *restaurantKitchen = [Kitchen new];
+        Manager *martin = [Manager new];
+        
+        restaurantKitchen.delegate = martin;
         
         while (TRUE) {
             // Loop forever
@@ -57,9 +62,12 @@ int main(int argc, const char * argv[])
             for (int i = 1; i < [commandWords count]; i++) {
                 [targetToppings addObject:commandWords[i]];
             }
+            if([Pizza conformsToProtocol:@protocol(KitchenDelegate)]) {
+                [restaurantKitchen makePizzaWithSize:targetSize toppings:targetToppings];
 
-            
-            [restaurantKitchen makePizzaWithSize:targetSize toppings:targetToppings];
+            } else if(@protocol(KitchenDelegate)) {
+                // make large pizza
+            }
         }
 
     }

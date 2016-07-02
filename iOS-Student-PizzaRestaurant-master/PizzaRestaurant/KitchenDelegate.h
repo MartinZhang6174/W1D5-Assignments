@@ -7,12 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Pizza.h"
+@class Kitchen;
 
 @protocol KitchenDelegate <NSObject>
 
--(BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)topping;
+-(BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(pizzaSize)size andToppings:(NSArray *)topping;
 -(BOOL)kitchenShouldUpgradeOrder:(Kitchen *)kitchen;
 @optional
 -(void)kitchenDidMakePizza:(Pizza *)pizza;
 
 @end
+
+
