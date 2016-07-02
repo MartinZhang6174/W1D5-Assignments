@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		6001EC81197B4EC300F97011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6001EC80197B4EC300F97011 /* Foundation.framework */; };
 		6001EC84197B4EC300F97011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC83197B4EC300F97011 /* main.m */; };
-		6001EC90197B502F00F97011 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC8F197B502F00F97011 /* Kitchen.m */; };
 		9CA381C71D26F84600BF259A /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381C61D26F84600BF259A /* Pizza.m */; };
 		9CA381E61D2747E000BF259A /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381E51D2747E000BF259A /* Manager.m */; };
+		9CA381E71D27590500BF259A /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC8F197B502F00F97011 /* Kitchen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -153,8 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CA381C71D26F84600BF259A /* Pizza.m in Sources */,
-				6001EC90197B502F00F97011 /* Kitchen.m in Sources */,
 				6001EC84197B4EC300F97011 /* main.m in Sources */,
+				9CA381E71D27590500BF259A /* Kitchen.m in Sources */,
 				9CA381E61D2747E000BF259A /* Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

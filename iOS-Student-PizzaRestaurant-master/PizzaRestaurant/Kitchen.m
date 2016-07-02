@@ -28,8 +28,8 @@
             default:
                 break;
         }
-        NSLog(@"Your %@ %@ pizza is ready!", sizeString, toppings);
         return [[Pizza alloc] initWithSize:size andToppings:toppings];
+        NSLog(@"Your %@ %@ pizza is ready!", sizeString, toppings);
     }
     else {
         NSLog(@"Unable to make such pizza.");

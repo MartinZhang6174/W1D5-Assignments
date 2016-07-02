@@ -21,7 +21,11 @@
 }
 
 -(BOOL)kitchenShouldUpgradeOrder:(Kitchen *)kitchen {
-    return FALSE;
+    if(self) {
+        return FALSE;
+    } else {
+        return TRUE;
+    }
 }
 
 @end
