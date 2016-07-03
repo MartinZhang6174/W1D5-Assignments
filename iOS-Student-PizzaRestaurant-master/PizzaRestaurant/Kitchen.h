@@ -12,8 +12,8 @@
 
 @interface Kitchen : NSObject
 
-@property (nonatomic, weak) id  <KitchenDelegate> delegate;
+@property (nonatomic, weak) id<KitchenDelegate> delegate;
 
-- (Pizza *)makePizzaWithSize:(pizzaSize)size toppings:(NSArray *)toppings;
+- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings;
 
 @end

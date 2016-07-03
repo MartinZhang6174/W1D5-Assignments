@@ -4,16 +4,16 @@
 //
 //  Created by Steven Masuch on 2014-07-19.
 //  Copyright (c) 2014 Lighthouse Labs. All rights reserved.
-//
 
 #import "Kitchen.h"
 
 @implementation Kitchen
 
-- (Pizza *)makePizzaWithSize:(pizzaSize)size toppings:(NSMutableArray *)toppings
+- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSMutableArray *)toppings
 {
-    if ([self.delegate kitchen:self shouldMakePizzaOfSize:size andToppings:toppings]) {
-        
+    BOOL shouldMakeDatPizza = [self.delegate kitchen:self shouldMakePizzaOfSize:size andToppings:toppings];
+    BOOL shouldUpgradDatPizza = [self.delegate kitchenShouldUpgradeOrder:self];
+    if ((shouldMakeDatPizza == true) && (shouldUpgradDatPizza == false)) {
         NSString *sizeString;
         switch (size) {
             case 1:
@@ -28,13 +28,20 @@
             default:
                 break;
         }
-        return [[Pizza alloc] initWithSize:size andToppings:toppings];
+        Pizza *pizzaMadeByOrder = [[Pizza alloc]initWithSize:size andToppings:toppings];
+        if ([self.delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
+            [self.delegate kitchenDidMakePizza:pizzaMadeByOrder];
         NSLog(@"Your %@ %@ pizza is ready!", sizeString, toppings);
-    }
-    else {
+        }
+        return [[Pizza alloc] initWithSize:size andToppings:toppings];
+
+    }else if(shouldMakeDatPizza == false) {
         NSLog(@"Unable to make such pizza.");
         return nil;
+    } else if (shouldUpgradDatPizza == true) {
+        return [[Pizza alloc] initWithSize:large andToppings:toppings];
     }
+    return 0;
 }
 
 @end

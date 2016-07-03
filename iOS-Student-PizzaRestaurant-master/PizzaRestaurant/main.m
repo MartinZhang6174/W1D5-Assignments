@@ -55,7 +55,7 @@ int main(int argc, const char * argv[])
                 size = 3;
             }
             
-            pizzaSize targetSize = size;
+            PizzaSize targetSize = size;
             
             NSMutableArray *targetToppings = [[NSMutableArray alloc] init];
             

@@ -11,8 +11,8 @@
 
 @implementation Manager
 
--(BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(pizzaSize)size andToppings:(NSArray *)topping {
-    if ((0 < size < 4) && topping.count > 0) {
+-(BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)topping {
+    if ([topping count] > 0) {
         return true;
     }
     else {
