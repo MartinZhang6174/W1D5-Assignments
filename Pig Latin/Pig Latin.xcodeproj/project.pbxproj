@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9CA381D71D2726CF00BF259A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381D61D2726CF00BF259A /* main.m */; };
 		9CA381DF1D27275700BF259A /* NSString+stringByPigLatinization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381DE1D27275700BF259A /* NSString+stringByPigLatinization.m */; };
-		9CA381E21D27321300BF259A /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381E11D27321300BF259A /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +28,6 @@
 		9CA381D61D2726CF00BF259A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CA381DD1D27275700BF259A /* NSString+stringByPigLatinization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+stringByPigLatinization.h"; sourceTree = "<group>"; };
 		9CA381DE1D27275700BF259A /* NSString+stringByPigLatinization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+stringByPigLatinization.m"; sourceTree = "<group>"; };
-		9CA381E01D27321300BF259A /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
-		9CA381E11D27321300BF259A /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				9CA381D61D2726CF00BF259A /* main.m */,
-				9CA381E01D27321300BF259A /* GameController.h */,
-				9CA381E11D27321300BF259A /* GameController.m */,
 				9CA381DD1D27275700BF259A /* NSString+stringByPigLatinization.h */,
 				9CA381DE1D27275700BF259A /* NSString+stringByPigLatinization.m */,
 			);
@@ -128,7 +123,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA381E21D27321300BF259A /* GameController.m in Sources */,
 				9CA381DF1D27275700BF259A /* NSString+stringByPigLatinization.m in Sources */,
 				9CA381D71D2726CF00BF259A /* main.m in Sources */,
 			);

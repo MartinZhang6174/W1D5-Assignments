@@ -10,4 +10,7 @@
 
 @interface NSString (stringByPigLatinization)
 
+
+-(instancetype)turnIntoPigLatinVersion;
+
 @end
