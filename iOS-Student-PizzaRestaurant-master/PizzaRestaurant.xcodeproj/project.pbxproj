@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		6001EC81197B4EC300F97011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6001EC80197B4EC300F97011 /* Foundation.framework */; };
 		6001EC84197B4EC300F97011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC83197B4EC300F97011 /* main.m */; };
+		9C7169AF1D32EA4D0093ACD3 /* CheeryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7169AE1D32EA4D0093ACD3 /* CheeryManager.m */; };
 		9CA381C71D26F84600BF259A /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381C61D26F84600BF259A /* Pizza.m */; };
-		9CA381E61D2747E000BF259A /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381E51D2747E000BF259A /* Manager.m */; };
 		9CA381E71D27590500BF259A /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC8F197B502F00F97011 /* Kitchen.m */; };
+		9CA382001D29E9D100BF259A /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381FF1D29E9D100BF259A /* Manager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,11 +34,13 @@
 		6001EC86197B4EC300F97011 /* PizzaRestaurant-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PizzaRestaurant-Prefix.pch"; sourceTree = "<group>"; };
 		6001EC8E197B502F00F97011 /* Kitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
 		6001EC8F197B502F00F97011 /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
+		9C7169AD1D32EA4D0093ACD3 /* CheeryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheeryManager.h; sourceTree = "<group>"; };
+		9C7169AE1D32EA4D0093ACD3 /* CheeryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheeryManager.m; sourceTree = "<group>"; };
 		9CA381C51D26F84600BF259A /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
 		9CA381C61D26F84600BF259A /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
 		9CA381E31D27361700BF259A /* KitchenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenDelegate.h; sourceTree = "<group>"; };
-		9CA381E41D2747E000BF259A /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
-		9CA381E51D2747E000BF259A /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		9CA381FE1D29E9D100BF259A /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		9CA381FF1D29E9D100BF259A /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +86,13 @@
 				6001EC83197B4EC300F97011 /* main.m */,
 				9CA381C51D26F84600BF259A /* Pizza.h */,
 				9CA381C61D26F84600BF259A /* Pizza.m */,
-				9CA381E41D2747E000BF259A /* Manager.h */,
-				9CA381E51D2747E000BF259A /* Manager.m */,
+				9CA381FE1D29E9D100BF259A /* Manager.h */,
+				9CA381FF1D29E9D100BF259A /* Manager.m */,
+				9C7169AD1D32EA4D0093ACD3 /* CheeryManager.h */,
+				9C7169AE1D32EA4D0093ACD3 /* CheeryManager.m */,
+				9CA381E31D27361700BF259A /* KitchenDelegate.h */,
 				6001EC8E197B502F00F97011 /* Kitchen.h */,
 				6001EC8F197B502F00F97011 /* Kitchen.m */,
-				9CA381E31D27361700BF259A /* KitchenDelegate.h */,
 				6001EC85197B4EC300F97011 /* Supporting Files */,
 			);
 			path = PizzaRestaurant;
@@ -152,10 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C7169AF1D32EA4D0093ACD3 /* CheeryManager.m in Sources */,
 				9CA381C71D26F84600BF259A /* Pizza.m in Sources */,
 				6001EC84197B4EC300F97011 /* main.m in Sources */,
 				9CA381E71D27590500BF259A /* Kitchen.m in Sources */,
-				9CA381E61D2747E000BF259A /* Manager.m in Sources */,
+				9CA382001D29E9D100BF259A /* Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

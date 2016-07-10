@@ -12,8 +12,8 @@
 
 -(instancetype)turnIntoPigLatinVersion {
     
-    NSCharacterSet *vowels = [NSCharacterSet characterSetWithCharactersInString:@"aeiou"];
-    NSRange vowelRange = [self rangeOfCharacterFromSet:(NSCharacterSet*) vowels];
+    NSCharacterSet *vowelSet = [NSCharacterSet characterSetWithCharactersInString:@"aeiou"];
+    NSRange vowelRange = [self rangeOfCharacterFromSet:(NSCharacterSet*) vowelSet];
     if (vowelRange.location == NSNotFound) {
         NSLog(@"The first character is not a consonant but a vowel.");
     } else {

@@ -1,24 +1,22 @@
 //
-//  Manager.m
+//  CheeryManager.m
 //  PizzaRestaurant
 //
-//  Created by Martin Zhang on 2016-07-03.
+//  Created by Martin Zhang on 2016-07-10.
 //  Copyright © 2016 Lighthouse Labs. All rights reserved.
 //
 
-#import "Manager.h"
+#import "CheeryManager.h"
 
-@implementation Manager
+@implementation CheeryManager
 
 - (BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)topping {
-    if ([topping containsObject:@"Anchovies"] || [topping containsObject:@"anchovies"]) {
-        return NO;
-    }
-    return  YES;
+    NSLog(@"You're always welcome to come again, my friend!");
+    return YES;
 }
 
 - (BOOL)kitchenShouldUpgradeOrder:(Kitchen *)kitchen {
-    return NO;
+    return YES;
 }
 
 @end
